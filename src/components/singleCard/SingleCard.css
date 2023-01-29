@@ -1,0 +1,46 @@
+.card {
+  position: relative;
+  cursor: pointer;
+  max-width: 20rem;
+  max-height: 20rem;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  -webkit-box-shadow: 10px 10px 54px -3px rgba(0,0,0,0.45);
+  -moz-box-shadow: 10px 10px 54px -3px rgba(0,0,0,0.45);
+  box-shadow: 10px 10px 54px -3px rgba(0,0,0,0.45);
+}
+
+.card.flipped {
+  pointer-events: none;
+}
+
+.card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.6rem;
+  border: 0.2rem solid #fff;
+}
+
+.card .card__front {
+  position: absolute;
+  transform: rotateY(90deg);
+  transition: all ease-in 0.2s;
+}
+.card .card__back {
+  transition: all ease-in 0.2s;
+  transition-delay: 0.2s;
+}
+
+.card.flipped .card__front {
+  transform: rotateY(0deg);
+  transition-delay: 0.2s;
+}
+.card.flipped .card__back {
+  transform: rotateY(90deg);
+  transition-delay: 0s;
+}
