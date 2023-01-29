@@ -21,6 +21,10 @@
   }
 }
 
+.game__footer {
+  margin: 2rem 0;
+}
+
 .game__title {
   margin-bottom: 3rem;
   font-size: 5.2rem;
@@ -40,7 +44,7 @@
 
 .game__btn-start:hover {
   color: #fff;
-  background-color: #ee4323;
+  background-color: var(--accent-color);
 }
 
 .card-grid {
@@ -48,6 +52,22 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 2rem;
+}
+
+.credits__title {
+  margin-bottom: 2rem;
+}
+
+.credits__item:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+.credits__item a {
+  transition: color 0.3s ease;
+}
+
+.credits__item:hover a {
+  color: #000;
 }
 
 .turns-counter {

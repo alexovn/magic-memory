@@ -98,13 +98,21 @@ export default function Game () {
           Turns: {turns}
         </div>
         <div className="credits">
-          <span>Special thanks to:</span>
-          <div className="credits__item">
-            Net Ninja(Shaun)
-          </div>
-          <div className="credits__item">
-            tdsouzpro127653
-          </div>
+          <h4 className="credits__title">
+            Special thanks to:
+          </h4>
+          <ul className="credits__list">
+            <li className="credits__item">
+              <a href="https://github.com/iamshaunjp" target="_blank" rel="noreferrer">
+                Net Ninja(Shaun)
+              </a>
+            </li>
+            <li className="credits__item">
+              <a href="https://www.vecteezy.com/members/tdsouzpro127653" target="_blank" rel="noreferrer">
+                tdsouzpro127653
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>

@@ -8,6 +8,7 @@
 
 :root {
   font-size: calc(100vw / 1440 * 10);
+  --accent-color: #ee4323;
 }
 
 @media(max-width: 991px) {
@@ -29,4 +30,9 @@ body {
   text-align: center;
   background: #ed806c;
   color: #fff;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
 }
